@@ -1,0 +1,30 @@
+.neptune {
+    @extend %planets;
+    background-image: radial-gradient(circle, #144897, #59d6ec);
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    top: 60%;
+}
+
+.line_neptune{
+    border: oldlace 1px solid;
+    border-radius: 50%;
+    width: 520px;
+    height: 520px;
+    position: absolute;
+    animation-name: neptune-line;
+    animation-duration: 38s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    & h4{
+        display: none;
+    }
+}
+
+
+@keyframes neptune-line {
+    100% {
+        transform: rotate(360deg);
+    }
+}

@@ -1,0 +1,30 @@
+.venus {
+    @extend %planets;
+    background-image: radial-gradient(circle, #b45656 90%, #49340c);
+    position: absolute;
+    width: 7px;
+    height: 7px;
+    top: 70%;
+}
+
+.line_venus{
+    border: oldlace 1px solid;
+    border-radius: 50%;
+    width: 90px;
+    height: 90px;
+    position: absolute;
+    animation-name: venus-line;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    & h4{
+        display: none;
+    }
+}
+
+
+@keyframes venus-line {
+    100% {
+        transform: rotate(360deg);
+    }
+}

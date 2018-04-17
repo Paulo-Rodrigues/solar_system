@@ -1,0 +1,30 @@
+.saturn {
+    @extend %planets;
+    background-image: radial-gradient(circle, #fdc2a7, #b4eef8);
+    position: absolute;
+    width: 17px;
+    height: 17px;
+    top: 65%;
+}
+
+.line_saturn{
+    border: oldlace 1px solid;
+    border-radius: 50%;
+    width: 360px;
+    height: 360px;
+    position: absolute;
+    animation-name: saturn-line;
+    animation-duration: 28s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    & h4{
+        display: none;
+    }
+}
+
+
+@keyframes saturn-line {
+    100% {
+        transform: rotate(360deg);
+    }
+}

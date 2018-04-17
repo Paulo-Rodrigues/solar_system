@@ -1,0 +1,30 @@
+.earth {
+    @extend %planets;
+    background-image: radial-gradient(circle, #79c0fa, #91f16a);
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    top: 65%;
+}
+
+.line_earth{
+    border: oldlace 1px solid;
+    border-radius: 50%;
+    width: 130px;
+    height: 130px;
+    position: absolute;
+    animation-name: earth-line;
+    animation-duration: 14s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    & h4{
+        display: none;
+    }
+}
+
+
+@keyframes earth-line {
+    100% {
+        transform: rotate(360deg);
+    }
+}

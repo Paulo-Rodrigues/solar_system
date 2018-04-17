@@ -1,0 +1,29 @@
+.jupiter {
+    @extend %planets;
+    background-image: radial-gradient(circle, #aa735e, #e2672d, #fff);
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    top: 65%;
+}
+
+.line_jupiter{
+    border: oldlace 1px solid;
+    border-radius: 50%;
+    width: 270px;
+    height: 270px;
+    position: absolute;
+    animation-name: jupiter-line;
+    animation-duration: 22s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    & h4{
+        display: none;
+    }
+}
+
+@keyframes jupiter-line {
+    100% {
+        transform: rotate(360deg);
+    }
+}

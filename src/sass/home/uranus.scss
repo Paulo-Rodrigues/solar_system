@@ -1,0 +1,30 @@
+.uranus {
+    @extend %planets;
+    background-image: radial-gradient(circle, #53f1f1, #97e9fd, #093577);
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top: 62%;
+}
+
+.line_uranus{
+    border: oldlace 1px solid;
+    border-radius: 50%;
+    width: 450px;
+    height: 450px;
+    position: absolute;
+    animation-name: uranus-line;
+    animation-duration: 34s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    & h4{
+        display: none;
+    }
+}
+
+
+@keyframes uranus-line {
+    100% {
+        transform: rotate(360deg);
+    }
+}
