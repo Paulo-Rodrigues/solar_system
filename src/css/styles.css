@@ -101,6 +101,30 @@ footer {
   justify-content: center;
   align-items: center; }
 
+.planet-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+  text-align: center;
+  margin: 10px;
+  box-sizing: border-box;
+  background-color: transparent;
+  height: 100%;
+  width: 15%;
+  overflow: hidden; }
+
+.planet-card-img {
+  display: block;
+  width: 100%;
+  height: 80%;
+  margin: 0;
+  background-image: radial-gradient(red, green); }
+
+.planet-card-title {
+  margin: 0;
+  padding: 5px; }
+
 #home {
   display: grid;
   grid-gap: 3px;
@@ -113,7 +137,7 @@ footer {
   justify-content: center;
   align-items: center; }
 
-.sun {
+.sun-home {
   position: absolute;
   background-image: radial-gradient(circle, #f8d300, #ffb42a, #ff3d3d, #fff);
   width: 50px;
@@ -135,7 +159,7 @@ footer {
     filter: brightness(1.2); }
   100% {
     filter: brightness(1); } }
-.mercury, .venus, .earth, .mars, .jupiter, .saturn, .uranus, .neptune {
+.mercury-home, .venus-home, .earth-home, .mars-home, .jupiter-home, .saturn-home, .uranus-home, .neptune-home {
   background-image: radial-gradient(circle, #aa735e 90%, #a77210);
   width: 15px;
   height: 15px;
@@ -147,7 +171,7 @@ footer {
 .lines h3 {
   display: none; }
 
-.mercury {
+.mercury-home {
   width: 5px;
   height: 5px;
   position: absolute;
@@ -169,7 +193,7 @@ footer {
 @keyframes mercury-line {
   100% {
     transform: rotate(360deg); } }
-.venus {
+.venus-home {
   background-image: radial-gradient(circle, #b45656 90%, #49340c);
   position: absolute;
   width: 7px;
@@ -192,7 +216,7 @@ footer {
 @keyframes venus-line {
   100% {
     transform: rotate(360deg); } }
-.earth {
+.earth-home {
   background-image: radial-gradient(circle, #79c0fa, #91f16a);
   position: absolute;
   width: 10px;
@@ -215,7 +239,7 @@ footer {
 @keyframes earth-line {
   100% {
     transform: rotate(360deg); } }
-.mars {
+.mars-home {
   background-image: radial-gradient(circle, #6e0202, #a77210);
   position: absolute;
   width: 8px;
@@ -238,7 +262,7 @@ footer {
 @keyframes mars-line {
   100% {
     transform: rotate(360deg); } }
-.jupiter {
+.jupiter-home {
   background-image: radial-gradient(circle, #aa735e, #e2672d, #fff);
   position: absolute;
   width: 25px;
@@ -261,7 +285,7 @@ footer {
 @keyframes jupiter-line {
   100% {
     transform: rotate(360deg); } }
-.saturn {
+.saturn-home {
   background-image: radial-gradient(circle, #fdc2a7, #b4eef8);
   position: absolute;
   width: 17px;
@@ -284,7 +308,7 @@ footer {
 @keyframes saturn-line {
   100% {
     transform: rotate(360deg); } }
-.uranus {
+.uranus-home {
   background-image: radial-gradient(circle, #53f1f1, #97e9fd, #093577);
   width: 15px;
   height: 15px;
@@ -307,7 +331,7 @@ footer {
 @keyframes uranus-line {
   100% {
     transform: rotate(360deg); } }
-.neptune {
+.neptune-home {
   background-image: radial-gradient(circle, #144897, #59d6ec);
   position: absolute;
   width: 14px;
@@ -330,5 +354,37 @@ footer {
 @keyframes neptune-line {
   100% {
     transform: rotate(360deg); } }
+#planets-grid {
+  display: grid;
+  grid-gap: 5px;
+  grid-template-columns: 2fr 2fr; }
+
+.side-image {
+  grid-column: 1 / 2; }
+
+.side-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  grid-column: 2 / 3; }
+.side-text p {
+  font-size: 1.2rem; }
+
+#planets-footer {
+  grid-column: 1 / -1; }
+
+.main-img img {
+  height: 400px;
+  width: 100%; }
+
+.images {
+  display: grid;
+  grid-gap: 3px;
+  grid-template-columns: repeat(4, 1fr); }
+
+.images img {
+  height: 100px;
+  width: 100%; }
 
 /*# sourceMappingURL=styles.css.map */

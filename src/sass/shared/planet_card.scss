@@ -1,0 +1,27 @@
+.planet-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    text-align: center;
+    margin: 10px;
+    box-sizing: border-box;
+    background-color: transparent;
+    height: 100%;
+    width: 15%;
+    overflow: hidden;
+}
+
+.planet-card-img {
+   display: block;
+   width: 100%;
+   height: 80%;
+   margin: 0;
+   background-image: radial-gradient(red,green);
+}
+
+.planet-card-title{
+    margin: 0;
+    padding: 5px;
+}
+

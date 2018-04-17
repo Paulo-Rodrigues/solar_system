@@ -1,0 +1,16 @@
+.main-img img{
+    height: 400px;
+    width: 100%;
+}
+
+.images{
+    display: grid;
+    grid-gap: 3px;
+    grid-template-columns: repeat(4,1fr);
+}
+
+.images img{
+    height: 100px;
+    width: 100%;
+}
+

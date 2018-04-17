@@ -1,0 +1,24 @@
+#planets-grid{
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: 2fr 2fr;
+}
+
+.side-image{
+    grid-column: 1 / 2;
+}
+
+.side-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    grid-column: 2 / 3;
+    & p{
+        font-size: 1.2rem;
+    }
+}
+
+#planets-footer{
+    grid-column: 1 / -1;
+}
