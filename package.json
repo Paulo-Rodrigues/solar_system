@@ -1,0 +1,16 @@
+{
+  "name": "solar-system",
+  "version": "1.0.0",
+  "description": "html5 css3 page",
+  "main": "src/js/main/bundle.js",
+  "scripts": {
+    "build": "gulp"
+  },
+  "author": "Paulo Rodrigues",
+  "license": "MIT",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-uglify": "^3.0.0"
+  }
+}
