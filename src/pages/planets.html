@@ -7,6 +7,7 @@
     <title>Solar System</title>
     <link rel="shortcut icon" href="../images/icons/favicon.ico" />
     <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/test.css">
     <link rel="manifest" href="../../manifest.json">
 </head>
 <body id="home">
@@ -40,9 +41,44 @@
         </section>
 
         <section class="side-text">
-            <h1>Earth</h1>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat amet esse veniam sit deserunt ipsa alias, modi doloremque magni aliquam, obcaecati eius totam nemo temporibus pariatur labore aut. Nobis, laborum.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia, esse. Exercitationem facilis, dolorem molestiae, similique ducimus veritatis a debitis possimus ipsam numquam iste quidem corporis? Nam eaque autem nulla. Rerum.</p>
+            
+            <p>
+                <button class="button-modal" data-modal="modalOne">
+                  Earth
+                </button>
+              </p>
+              <p>
+                <button class="button-modal" data-modal="modalTwo">
+                  Mercury
+                </button>
+              </p>
+              
+              <section id="modalOne" class="modal">
+                <section class="modal-content">
+                    <section class="modal-header">
+                        <a class="close-modal">&times;</a>
+                        <h2>Earth</h2><br>
+                    </section>
+                    <section class="modal-body">
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </section>
+                </section>
+              </section>
+
+              <section id="modalTwo" class="modal">
+                <section class="modal-content">
+                    <section class="modal-header">
+                        <a class="close-modal">&times;</a>
+                        <h2>Mercury</h2><br>
+                    </section>
+                    <section class="modal-body">
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </section>
+                </section>
+              </section>
+              
+
+            
         </section>
 
         <footer id="planets-footer">
@@ -50,6 +86,7 @@
         </footer>
     </main>
 
+    <script src="../js/modal.js"></script>
     <script src="../js/main/bundle.min.js"></script>
 </body>
 </html>
