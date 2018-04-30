@@ -7,7 +7,6 @@
     <title>Solar System</title>
     <link rel="shortcut icon" href="../images/icons/favicon.ico" />
     <link rel="stylesheet" href="../css/styles.css">
-    <link rel="stylesheet" href="../css/test.css">
     <link rel="manifest" href="../../manifest.json">
 </head>
 <body id="home">
@@ -23,24 +22,28 @@
     </header>
 
     <main id="planets-grid">
-        <section class="side-image">
-            <section class="main-img">
-                <img src="../images/planets/earth.jpg" id="current-img">
-            </section>
+        <template class="side-image">
+            <figure class="main-img">
+                <img alt="main-image" src="../images/planets/earth.jpg" id="current-img" />
+            </figure>
     
             <section class="images">
-                <img src="../images/planets/mercury.jpg"></img>
-                <img src="../images/planets/venus.jpg"></img>
-                <img src="../images/planets/earth.jpg"></img>
-                <img src="../images/planets/mars.jpg"></img>
-                <img src="../images/planets/jupiter.jpg"></img>
-                <img src="../images/planets/saturn.jpg"></img>
-                <img src="../images/planets/uranus.jpg"></img>
-                <img src="../images/planets/neptune.jpg"></img>
+                <figure>
+                    <img alt="mercury" src="../images/planets/mercury.jpg" />
+                    <figcaption>Legenda</figcaption>
+                </figure>
+                
+                <img alt="venus" src="../images/planets/venus.jpg" />
+                <img alt="earth" src="../images/planets/earth.jpg" />
+                <img alt="mars" src="../images/planets/mars.jpg" />
+                <img alt="jupiter" src="../images/planets/jupiter.jpg" />
+                <img alt="saturn" src="../images/planets/saturn.jpg" />
+                <img alt="uranus" src="../images/planets/uranus.jpg" />
+                <img alt="neptune" src="../images/planets/neptune.jpg" />
             </section>
-        </section>
+        </template>
 
-        <section class="side-text">
+        <template class="side-text">
             
             <p>
                 <button class="button-modal" data-modal="modalOne">
@@ -79,7 +82,7 @@
               
 
             
-        </section>
+            </template>
 
         <footer id="planets-footer">
             <p>Copyright &COPY;</p>
