@@ -1,54 +1,72 @@
-#planets-grid{
+// #planets-grid{
+//     display: grid;
+//     grid-gap: 5px;
+//     grid-template-columns: 2fr 2fr;
+// }
+
+// .side-image{
+//     grid-column: 1 / 2;
+//     margin: 0 20px;
+//     width: 80%;
+// }
+
+// .side-text{
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+//     padding: 0;
+//     margin-right: 20%;
+//     grid-column: 2 / 3;
+//     & p{
+//         font-size: 1.2rem;
+//         margin: 10px;
+//     }
+// }
+
+// #planets-footer{
+//     grid-column: 1 / -1;
+// }
+
+// @media(max-width: 780px){
+//     #planets-grid{
+//         display: grid;
+//         grid-gap: 5px;
+//         grid-template-columns: 1fr;
+//     }
+//     .side-image{
+//         grid-column: 1 / -1;
+//         margin: 0 auto;
+//         width: 80%;
+//     }
+//     .side-text{
+//         display: flex;
+//         flex-direction: column;
+//         align-items: center;
+//         padding: 0;
+//         margin: 0;
+//         grid-column: 1 / -1;
+//         & p{
+//             font-size: 1.2rem;
+//             margin: 10px;
+//         }
+//     }
+    
+// }
+.planets-info{
+    display: grid;
+    height: 30vh;
+}
+
+.planets-grid{
     display: grid;
     grid-gap: 5px;
-    grid-template-columns: 2fr 2fr;
+    grid-template-columns: repeat(3, 1fr);
 }
 
-.side-image{
-    grid-column: 1 / 2;
-    margin: 0 20px;
-    width: 80%;
-}
-
-.side-text{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 0;
-    margin-right: 20%;
-    grid-column: 2 / 3;
-    & p{
-        font-size: 1.2rem;
-        margin: 10px;
-    }
-}
-
-#planets-footer{
-    grid-column: 1 / -1;
-}
-
-@media(max-width: 780px){
-    #planets-grid{
+@media(max-width: 420px){
+    .planets-grid{
         display: grid;
         grid-gap: 5px;
         grid-template-columns: 1fr;
     }
-    .side-image{
-        grid-column: 1 / -1;
-        margin: 0 auto;
-        width: 80%;
-    }
-    .side-text{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 0;
-        margin: 0;
-        grid-column: 1 / -1;
-        & p{
-            font-size: 1.2rem;
-            margin: 10px;
-        }
-    }
-    
 }

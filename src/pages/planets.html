@@ -21,73 +21,25 @@
         </nav>
     </header>
 
-    <main id="planets-grid">
-        <template class="side-image">
-            <figure class="main-img">
-                <img alt="main-image" src="../images/planets/earth.jpg" id="current-img" />
-            </figure>
-    
-            <section class="images">
-                <figure>
-                    <img alt="mercury" src="../images/planets/mercury.jpg" />
-                    <figcaption>Legenda</figcaption>
-                </figure>
-                
-                <img alt="venus" src="../images/planets/venus.jpg" />
-                <img alt="earth" src="../images/planets/earth.jpg" />
-                <img alt="mars" src="../images/planets/mars.jpg" />
-                <img alt="jupiter" src="../images/planets/jupiter.jpg" />
-                <img alt="saturn" src="../images/planets/saturn.jpg" />
-                <img alt="uranus" src="../images/planets/uranus.jpg" />
-                <img alt="neptune" src="../images/planets/neptune.jpg" />
-            </section>
-        </template>
-
-        <template class="side-text">
-            
-            <p>
-                <button class="button-modal" data-modal="modalOne">
-                  Earth
-                </button>
-              </p>
-              <p>
-                <button class="button-modal" data-modal="modalTwo">
-                  Mercury
-                </button>
-              </p>
-              
-              <section id="modalOne" class="modal">
-                <section class="modal-content">
-                    <section class="modal-header">
-                        <a class="close-modal">&times;</a>
-                        <h2>Earth</h2><br>
-                    </section>
-                    <section class="modal-body">
-                        <p>Lorem ipsum dolor sit amet.</p>
-                    </section>
-                </section>
-              </section>
-
-              <section id="modalTwo" class="modal">
-                <section class="modal-content">
-                    <section class="modal-header">
-                        <a class="close-modal">&times;</a>
-                        <h2>Mercury</h2><br>
-                    </section>
-                    <section class="modal-body">
-                        <p>Lorem ipsum dolor sit amet.</p>
-                    </section>
-                </section>
-              </section>
-              
-
-            
-            </template>
-
-        <footer id="planets-footer">
-            <p>Copyright &COPY;</p>
-        </footer>
+    <main>
+        <section class="planets-info">
+            some text...
+        </section>
+        <section class="planets-grid">
+            <article class="planet-card">
+                <article class="planet-card-side planet-card-front">
+                    front
+                </article>
+                <article class="planet-card-side planet-card-back">
+                    back
+                </article>
+            </article>
+        </section>                
     </main>
+
+    <footer id="planets-footer">
+        <p>Copyright &COPY;</p>
+    </footer>
 
     <script src="../js/modal.js"></script>
     <script src="../js/main/bundle.min.js"></script>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Solar System</title>
+    <link rel="shortcut icon" href="../images/icons/favicon.ico" />
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="manifest" href="../../manifest.json">
+</head>
+<body id="home">
+    <header id="planets-header">
+        <nav class="navbar">
+            <h1><a href="../../index.html"> Solar System</a></h1>
+            <ul>
+                <li><a href="#">Planets</a></li>
+                <li><a href="others.html">Others</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="planets-grid">
+        <section class="side-image">
+            <figure class="main-img">
+                <img alt="main-image" src="../images/planets/earth.jpg" id="current-img" />
+            </figure>
+    
+            <section class="images">
+                <img alt="mercury" src="../images/planets/mercury.jpg" />
+                <img alt="venus" src="../images/planets/venus.jpg" />
+                <img alt="earth" src="../images/planets/earth.jpg" />
+                <img alt="mars" src="../images/planets/mars.jpg" />
+                <img alt="jupiter" src="../images/planets/jupiter.jpg" />
+                <img alt="saturn" src="../images/planets/saturn.jpg" />
+                <img alt="uranus" src="../images/planets/uranus.jpg" />
+                <img alt="neptune" src="../images/planets/neptune.jpg" />
+            </section>
+        </section>
+
+        <section class="side-text">
+            
+            <p>
+                <button class="button-modal" data-modal="modalOne">
+                  Earth
+                </button>
+              </p>
+              <p>
+                <button class="button-modal" data-modal="modalTwo">
+                  Mercury
+                </button>
+              </p>
+              
+              <section id="modalOne" class="modal">
+                <section class="modal-content">
+                    <section class="modal-header">
+                        <a class="close-modal">&times;</a>
+                        <h2>Earth</h2><br>
+                    </section>
+                    <section class="modal-body">
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </section>
+                </section>
+              </section>
+
+              <section id="modalTwo" class="modal">
+                <section class="modal-content">
+                    <section class="modal-header">
+                        <a class="close-modal">&times;</a>
+                        <h2>Mercury</h2><br>
+                    </section>
+                    <section class="modal-body">
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </section>
+                </section>
+              </section>
+              
+
+            
+            </section>
+
+        <footer id="planets-footer">
+            <p>Copyright &COPY;</p>
+        </footer>
+    </main>
+
+    <script src="../js/modal.js"></script>
+    <script src="../js/main/bundle.min.js"></script>
+</body>
+</html>
