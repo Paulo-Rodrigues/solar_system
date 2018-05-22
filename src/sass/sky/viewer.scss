@@ -1,0 +1,37 @@
+.img-viewer{
+    border: 1px solid #fff;
+    height: 70%;
+    width: 70%;
+    margin: auto;
+    animation-name: viewerAnimation;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+
+    & img{
+        height: 100%;
+        width: 100%;
+    }
+}
+
+@media(max-width: 850px){
+    .img-viewer{
+        border: 1px solid #fff;
+        height: 70%;
+        margin: auto;
+    
+        & img{
+            height: 100%;
+            width: 100%;
+        }
+    }
+}
+
+@keyframes viewerAnimation{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+

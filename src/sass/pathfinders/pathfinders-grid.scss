@@ -1,0 +1,88 @@
+.pathfinders-container{
+    margin: 0 10%;
+}
+.pathfinders-grid{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: auto;
+}
+
+%pathfinders{
+    border: 1px solid #fff;
+    height: 150px;
+    background-image: radial-gradient(circle,#000, gray, #000);
+
+    & h4{
+        text-transform: uppercase;
+        padding: 10px;
+        margin: 0;
+    }
+
+    & p{
+        margin: 0;
+        padding: 5px;
+    }
+}
+
+%pathanimationright{
+    animation-name: textMoveRight;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+}
+
+%pathanimationleft{
+    animation-name: textMoveLeft;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+}
+
+.pathfinders-1{
+    @extend %pathfinders;
+    @extend %pathanimationright;
+    grid-column: 1/2;
+}
+
+.pathfinders-2{
+    @extend %pathfinders;
+    @extend %pathanimationleft;
+    grid-column: 2/3;
+}
+
+.pathfinders-3{
+    @extend %pathfinders;
+    @extend %pathanimationright;
+    grid-column: 1/2;
+}
+
+.pathfinders-4{
+    @extend %pathfinders;
+    @extend %pathanimationleft;
+    grid-column: 2/3;
+}
+
+.pathfinders-footer{
+    grid-column: 1/-1;
+}
+
+@keyframes textMoveRight{
+    0%{
+        opacity: 0;
+        transform: translateX(-300px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes textMoveLeft{
+    0%{
+        opacity: 0;
+        transform: translateX(300px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}

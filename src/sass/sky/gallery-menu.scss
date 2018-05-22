@@ -1,0 +1,76 @@
+%menu{
+    background-color: rgb(78, 78, 78);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation-name: comesFromAbove;
+    animation-duration: 3s;
+
+    & p{
+        border: 1px solid #fff;
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+
+        & img {
+            height: 30px;
+            width: 30px;
+            border-radius: 50%;
+            margin-right: 5px;
+        }
+    }
+}
+
+.menu-1{
+    @extend %menu;
+
+    & p{
+        animation-name: comesFromLeft;
+        animation-duration: 3s;
+    }
+}
+
+.menu-2{
+    @extend %menu;
+
+    & p{
+        animation-name: comesFromRight;
+        animation-duration: 3s;
+    }
+}
+
+@keyframes comesFromAbove{
+    0%{
+        opacity: 0;
+        transform: translateY(-150px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes comesFromLeft{
+    0%{
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes comesFromRight{
+    0%{
+        opacity: 0;
+        transform: translateX(150px);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
