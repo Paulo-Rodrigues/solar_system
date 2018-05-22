@@ -532,34 +532,23 @@ footer {
   align-content: center;
   padding: 10px; }
 
+.sky-container {
+  margin: 50px 10%; }
+
 .sky-grid {
   display: grid;
-  grid-gap: 0px;
+  grid-gap: 2rem;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(4, 1fr) 50px;
-  height: 100vh;
-  text-align: center; }
+  grid-template-rows: repeat(4, 1fr);
+  height: 100%; }
 
-.sky-north {
-  grid-column: 1 / 5; }
-
-.sky-west {
-  grid-row: 2 / 4; }
-
-.sky-east {
-  grid-column: 4 / 5;
-  grid-row: 2 / 4; }
-
-.sky-south {
-  grid-column: 1 / 5;
-  grid-row: 4 / 5; }
-
+.sky {
+  background-color: #000; }
+.sky-1 {
+  grid-column: 1/2; }
 .sky-earth {
-  grid-column: 2 / 4;
-  grid-row: 2 / 4; }
-
-.sky-footer {
-  grid-row: 4 /5; }
+  grid-column: 2/4;
+  grid-row: 2/4; }
 
 .sky-earth {
   padding: 10px;
@@ -579,5 +568,84 @@ footer {
 
 .sky-south {
   background-color: #000000; }
+
+.about-container {
+  margin: 10px 10%; }
+
+.about-grid {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: repeat(2, 1fr); }
+
+.about-card {
+  display: flex;
+  flex-direction: column;
+  background-color: #484848;
+  align-items: center; }
+.about-card img {
+  height: 80px;
+  width: 80px;
+  margin-top: 15px;
+  border-radius: 50%; }
+.about-card h3 {
+  text-transform: uppercase; }
+.about-card p {
+  margin: 0;
+  margin-bottom: 10px;
+  padding: 10px; }
+.about-card p a {
+  color: #fff;
+  padding: 20px;
+  border-radius: 35px;
+  text-decoration: none;
+  background-color: #272727; }
+.about-card p a:hover {
+  text-decoration: underline; }
+
+.about-contrib {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+.about-contrib h3 {
+  text-align: center; }
+.about-contrib a {
+  color: #fff; }
+.about-contrib a:hover {
+  text-decoration: line-through; }
+
+.about-contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+.about-contact h3 {
+  margin: 10px;
+  text-transform: uppercase; }
+.about-contact form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  width: 90%; }
+.about-contact form input, .about-contact form textarea {
+  display: block;
+  padding: 8px;
+  margin: 5px 0;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #fff; }
+.about-contact form input:focus, .about-contact form textarea:focus {
+  border: none;
+  border-bottom: 1px solid #fff;
+  outline: none; }
+
+.about-info {
+  background-color: rgba(72, 72, 72, 0.507); }
+.about-info h1 {
+  text-transform: uppercase;
+  text-align: center; }
+.about-info p {
+  padding: 10px;
+  text-align: justify;
+  margin: 0 50px; }
 
 /*# sourceMappingURL=styles.css.map */

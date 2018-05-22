@@ -1,0 +1,36 @@
+.about-card{
+    display: flex;
+    flex-direction: column;
+    background-color: #484848;
+    align-items: center;
+
+    & img{
+        height: 80px;
+        width: 80px;
+        margin-top: 15px;
+        border-radius: 50%;
+    }
+
+    & h3{
+        text-transform: uppercase;
+    }
+
+    & p{
+        margin: 0;
+        margin-bottom: 10px;
+        padding: 10px;
+
+        & a{
+            color: #fff;
+            padding: 20px;
+            border-radius: 35px;
+            text-decoration: none;
+            background-color: #272727;
+            
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+    }
+
+}

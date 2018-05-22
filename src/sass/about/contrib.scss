@@ -1,0 +1,16 @@
+.about-contrib{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    & h3{
+        text-align: center;
+    }
+
+    & a{
+        color: #fff;
+        &:hover{
+            text-decoration: line-through;
+        }
+    }
+}

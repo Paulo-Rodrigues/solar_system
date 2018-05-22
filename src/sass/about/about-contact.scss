@@ -1,0 +1,31 @@
+.about-contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    & h3{
+        margin: 10px;
+        text-transform: uppercase;
+    }
+
+    & form{
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+        width: 90%;
+        & input, textarea{
+            display: block;
+            padding: 8px;
+            margin: 5px 0;
+            background-color: transparent;
+            border: none;
+            border-bottom: 1px solid #fff;
+
+            &:focus{
+                border: none;
+                border-bottom: 1px solid #fff;
+                outline: none;
+            }
+        }
+    }
+}

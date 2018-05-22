@@ -1,35 +1,22 @@
+.sky-container{
+    margin: 50px 10%;
+}
 .sky-grid{
     display: grid;
-    grid-gap: 0px;
-    grid-template-columns: repeat(4,1fr);
-    grid-template-rows: repeat(4,1fr) 50px;
-    height: 100vh;
-    text-align: center;
+    grid-gap: 2rem;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4,1fr);
+    height: 100%;
 }
 
-.sky-north{
-    grid-column: 1 / 5;
-}
+.sky{
+    background-color: #000;
 
-.sky-west{
-    grid-row: 2 / 4;
-}
-
-.sky-east{
-    grid-column: 4 / 5;
-    grid-row: 2 / 4;
-}
-
-.sky-south{
-    grid-column: 1 / 5;
-    grid-row: 4 / 5;
-}
-
-.sky-earth{
-    grid-column: 2 / 4;
-    grid-row: 2 / 4;
-}
-
-.sky-footer{
-    grid-row: 4 /5;
+    &-1{
+        grid-column: 1/2;
+    }
+    &-earth{
+        grid-column: 2/4;
+        grid-row: 2/4;
+    }
 }
