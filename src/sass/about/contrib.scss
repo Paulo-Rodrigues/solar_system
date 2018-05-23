@@ -9,6 +9,12 @@
 
     & a{
         color: #fff;
+        & i{
+            animation: rotator 1s linear;
+            &:hover, &:focus{
+                animation: rotatorY 1s linear;
+            }
+        }
         &:hover{
             text-decoration: line-through;
         }

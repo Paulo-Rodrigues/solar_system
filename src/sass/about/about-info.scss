@@ -4,11 +4,13 @@
     & h1{
         text-transform: uppercase;
         text-align: center;
+        animation: faderIn 3s linear;
     }
 
     & p{
         padding: 10px;
         text-align: justify;
         margin: 0 50px;
+        animation: faderIn 3s linear;
     }
 }

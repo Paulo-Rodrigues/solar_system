@@ -14,11 +14,13 @@
         text-transform: uppercase;
         margin: 10px 0;
         text-align: center;
+        animation: faderIn 3s linear;
     }
     & p{
         padding: 0px;
         margin: 5px 50px;
         text-align: justify;
+        animation: faderIn 3s linear;
     }
 }
 

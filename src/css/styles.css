@@ -48,26 +48,40 @@ body {
   z-index: 101;
   top: 0;
   left: 0;
-  background-color: #b8b8b8;
+  background-color: #777;
   width: 60%;
   height: 100vh; }
+.mobile_navbar h1 {
+  background-image: linear-gradient(to right bottom, darksalmon, red);
+  padding: 20px;
+  margin-top: 0;
+  text-transform: uppercase;
+  text-align: center;
+  animation: rotator 1s linear; }
+.mobile_navbar h1 a {
+  color: #fff;
+  text-decoration: none; }
+.mobile_navbar h1 a:hover, .mobile_navbar h1 a:focus {
+  text-decoration: underline; }
 .mobile_navbar ul {
   width: 100%;
   height: 100%;
   list-style: none;
   margin: 0;
+  padding-left: 0;
   text-align: center; }
 .mobile_navbar ul li {
   font-size: 1.5rem;
-  padding: 10px; }
+  padding: 10px;
+  animation: comesFromDown .5s ease-in; }
 .mobile_navbar ul li:hover, .mobile_navbar ul li:focus {
   text-decoration: underline;
   text-decoration-color: #fff;
   opacity: 0.6;
-  background-color: gray; }
+  background-color: #5e5d5d; }
 .mobile_navbar ul li a {
   text-decoration: none;
-  color: #001;
+  color: #fff;
   opacity: 1; }
 
 .mobile-nav-header {
@@ -165,6 +179,22 @@ footer {
   from {
     opacity: 0; }
   to {
+    opacity: 1; } }
+@keyframes rotator {
+  100% {
+    transform: rotateX(360deg); } }
+@keyframes comesFromDown {
+  0% {
+    transform: translateY(150px); }
+  100% {
+    transform: translateY(0); } }
+@keyframes rotatorY {
+  100% {
+    transform: rotateY(360deg); } }
+@keyframes faderIn {
+  0% {
+    opacity: 0; }
+  100% {
     opacity: 1; } }
 #home {
   display: grid;
@@ -655,13 +685,16 @@ footer {
   height: 80px;
   width: 80px;
   margin-top: 15px;
-  border-radius: 50%; }
+  border-radius: 50%;
+  animation: rotatorY 1s linear; }
 .about-card h3 {
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  animation: faderIn 2s linear; }
 .about-card p {
   margin: 0;
   margin-bottom: 10px;
-  padding: 10px; }
+  padding: 10px;
+  animation: faderIn 2s linear; }
 .about-card p a {
   color: #fff;
   padding: 20px;
@@ -679,13 +712,18 @@ footer {
   text-align: center; }
 .about-contrib a {
   color: #fff; }
+.about-contrib a i {
+  animation: rotator 1s linear; }
+.about-contrib a i:hover, .about-contrib a i:focus {
+  animation: rotatorY 1s linear; }
 .about-contrib a:hover {
   text-decoration: line-through; }
 
 .about-contact {
   display: flex;
   flex-direction: column;
-  align-items: center; }
+  align-items: center;
+  animation: faderIn 3s linear; }
 .about-contact h3 {
   margin: 10px;
   text-transform: uppercase; }
@@ -710,11 +748,13 @@ footer {
   background-color: rgba(72, 72, 72, 0.507); }
 .about-info h1 {
   text-transform: uppercase;
-  text-align: center; }
+  text-align: center;
+  animation: faderIn 3s linear; }
 .about-info p {
   padding: 10px;
   text-align: justify;
-  margin: 0 50px; }
+  margin: 0 50px;
+  animation: faderIn 3s linear; }
 
 .pathfinders-container {
   margin: 0 10%; }
@@ -790,10 +830,12 @@ footer {
 .pathfinders-info h1 {
   text-transform: uppercase;
   margin: 10px 0;
-  text-align: center; }
+  text-align: center;
+  animation: faderIn 3s linear; }
 .pathfinders-info p {
   padding: 0px;
   margin: 5px 50px;
-  text-align: justify; }
+  text-align: justify;
+  animation: faderIn 3s linear; }
 
 /*# sourceMappingURL=styles.css.map */

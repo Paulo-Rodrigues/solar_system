@@ -9,16 +9,19 @@
         width: 80px;
         margin-top: 15px;
         border-radius: 50%;
+        animation: rotatorY 1s linear;
     }
 
     & h3{
         text-transform: uppercase;
+        animation: faderIn 2s linear;
     }
 
     & p{
         margin: 0;
         margin-bottom: 10px;
         padding: 10px;
+        animation: faderIn 2s linear;
 
         & a{
             color: #fff;
